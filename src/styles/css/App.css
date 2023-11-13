@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-image: linear-gradient(45deg, hsl(222, 49%, 11%) 0%, hsl(219, 49%, 13%) 10%, hsl(217, 50%, 15%) 20%, hsl(215, 51%, 18%) 30%, hsl(213, 53%, 20%) 40%, hsl(210, 55%, 22%) 50%, hsl(212, 55%, 22%) 60%, hsl(214, 54%, 22%) 70%, hsl(216, 52%, 21%) 80%, hsl(219, 51%, 21%) 90%, hsl(222, 49%, 21%) 100%);
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: 200%;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(45deg, hsl(222, 49%, 11%) 0%, hsl(219, 49%, 13%) 10%, hsl(217, 50%, 15%) 20%, hsl(215, 51%, 18%) 30%, hsl(213, 53%, 20%) 40%, hsl(210, 55%, 22%) 50%, hsl(212, 55%, 22%) 60%, hsl(214, 54%, 22%) 70%, hsl(216, 52%, 21%) 80%, hsl(219, 51%, 21%) 90%, hsl(222, 49%, 21%) 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.icon {
+  height: 70px;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+}
+.icon img {
+  height: 100%;
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 35px;
+  height: 100%;
+  width: 70px;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+.logo p {
+  margin-top: 16px;
+  padding-left: 8px;
+  font-weight: 600;
+  font-size: 28px;
+  opacity: 0;
+  transition: ease 0.2s;
+  transform: translateX(-70%);
+  cursor: pointer;
+}
+.logo:hover {
+  width: 190px;
+}
+.logo:hover p {
+  opacity: 1;
+  transition: ease 0.3s;
+  transform: translateX(0);
+}
+
+.hero {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero .hero-text {
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 40px;
+  padding: 0 20px;
+}
+.hero .hero-text span {
+  color: #32a8db;
+  font-size: 44px;
+}
+.hero h2 {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0px;
+  padding: 0 20px;
+  font-size: 24px;
+  width: 58%;
+}
+.hero h2 span {
+  color: #32a8db;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  max-width: 1190px;
+  width: 100%;
+}
+form .link-icon {
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  margin-left: 16px;
+}
+form input {
+  max-width: 1190px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  height: 56px;
+  padding: 10px;
+  padding-left: 50px;
+  font-family: Poppins;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 50px;
+}
+form input:focus {
+  border: 1px solid #fff;
+}
+form input:active {
+  border: 1px solid #fff;
+}
+form button {
+  position: absolute;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.88);
+  height: 30px;
+  width: 38px;
+  border-radius: 30px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.article-section {
+  max-width: 86%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.copy-btn {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 40px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+.copy-btn img {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-top: 1px;
+}
+
+.links-holder {
+  padding-bottom: 70px;
+}
+
+.all-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 1000px;
+}
+.all-links p {
+  margin-left: 30px;
+  padding-right: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 90%;
+  margin-top: 14px;
+  color: #48aed6;
+  cursor: pointer;
+}
+
+.past {
+  margin: 30px 0 20px 0;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+}
+.loader img {
+  width: 80px;
+  height: 80px;
+}
+
+.article-holder {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.4);
+  min-height: 50vh;
+  border-radius: 40px;
+  max-width: 1190px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.article-holder h2 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 36px;
+}
+.article-holder .copy-btn2 {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 40px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin-left: 20px;
+  position: absolute;
+  right: 40px;
+  top: 38px;
+}
+.article-holder .copy-btn2 img {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-top: 1px;
+}
+.article-holder p {
+  letter-spacing: 0.25px;
+  font-size: 19px;
+  color: #3cbef6;
+  font-weight: 400;
+  padding: 10px 40px 24px 40px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+/*# sourceMappingURL=App.css.map */
